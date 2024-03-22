@@ -18,3 +18,17 @@ source devel/setup.bash
 ```
 roslaunch alex rviz.launch
 ```
+
+
+## Install Foxglove:
+```
+    sudo apt install ros-noetic-foxglove-bridge
+```
+
+To start foxglove websocket:
+```
+    roslaunch --screen foxglove_bridge foxglove_bridge.launch port:=8765
+```
+
+TLS can be enabled, just need add path to certificates.
+More info here: https://github.com/foxglove/ros-foxglove-bridge
