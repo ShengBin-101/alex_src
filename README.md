@@ -1,6 +1,6 @@
-# CG2111A-Final-Project
+# alex_ws
 
-This repo is the ROS1 Noetic Workspace for Alex.
+This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
 
 1) Clone Repo
 ```
