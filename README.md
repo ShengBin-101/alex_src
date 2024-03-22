@@ -30,5 +30,8 @@ To start foxglove websocket:
     roslaunch --screen foxglove_bridge foxglove_bridge.launch port:=8765
 ```
 
+![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/7bbd2431-71d5-4141-84cc-da8585d3f1eb)
+
+
 TLS can be enabled, just need add path to certificates.
 More info here: https://github.com/foxglove/ros-foxglove-bridge
