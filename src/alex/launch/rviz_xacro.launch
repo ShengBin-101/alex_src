@@ -9,6 +9,9 @@
     
 
 
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find alex)/config/alex.rviz"/>
+	    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find alex)/config/alex.rviz"/> -->
+
+    <include file="$(find rplidar_ros)/launch/rplidar_a1.launch"/>
+    <include file="$(find alex)/launch/slam.launch"/>
 
 </launch>
