@@ -2,6 +2,8 @@
 
 This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
 
+[Follow this guide for first time set up for lidar](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/)
+
 1) Clone Repo
 ```
 git clone https://github.com/ShengBin-101/alex_ws.git
