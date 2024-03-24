@@ -2,7 +2,7 @@
 
 This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
 
-[Follow this guide for first time set up for lidar](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/)
+## How to use this repo.
 
 1) Clone Repo
 ```
@@ -25,6 +25,46 @@ source devel/setup.bash
 ```
 roslaunch alex slam.launch
 ```
+
+
+## Lidar Setup
+[Follow this guide for first time set up for lidar](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/)
+
+    sudo apt-get update
+Install Dependencies
+
+    sudo apt-get install cmake python-catkin-pkg python-empy python-nose python-setuptools libgtest-dev python-rosinstall python-rosinstall-generator python-wstool build-essential git
+    sudo apt-get install qt4-qmake qt4-dev-tools
+
+Change permissions for lidar's port
+
+    sudo chmod 666 /dev/ttyUSB0
+
+## Map Server for saving of maps
+
+Install Map server and create maps directory to hold maps.
+    
+    sudo apt-get install ros-noetic-map-server
+    mkdir ~/alex_ws/maps
+
+### Saving map
+    
+    cd ~/alex_ws/maps
+    rosrun map_server map_saver -f <map_name>
+
+### Loading map
+On one terminal run
+
+    roscore
+On another terminal
+
+    cd ~/alex_ws/maps
+    rosrun map_server map_server my_map.yaml
+Map can be viewed on RVIZ
+
+    rviz
+
+Map can also be viewed on foxglove. Look at below section for foxglove.
 
 ## Visualisation using foxglove
 
