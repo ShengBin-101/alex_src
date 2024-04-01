@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
 <launch>
     
-    <param name="robot_description" textfile="$(find alex)/urdf/alex.urdf" />
+    <param name="robot_description" textfile="/home/pi35b/alex_ws/src/alex/urdf/alex.urdf" />
     <!-- <arg name="rviz_config_file" default="$(find alex)/config/alex.rviz"/> -->
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
     <!-- <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" /> -->
     <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui"/>
     
-
-
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find alex)/config/alex.rviz"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d /home/pi35b/alex_ws/src/alex/config/alex.rviz"/>
 
 </launch>
