@@ -25,7 +25,7 @@ source devel/setup.bash
 ```
 roslaunch alex slam.launch
 ```
-
+---
 
 ## Lidar Setup
 [Follow this guide for first time set up for lidar](https://automaticaddison.com/how-to-build-an-indoor-map-using-ros-and-lidar-based-slam/)
@@ -39,7 +39,7 @@ Install Dependencies
 Change permissions for lidar's port
 
     sudo chmod 666 /dev/ttyUSB0
-
+---
 ## Map Server for saving of maps
 
 Install Map server and create maps directory to hold maps.
@@ -66,6 +66,7 @@ Map can be viewed on RVIZ
 
 Map can also be viewed on foxglove. Look at below section for foxglove.
 
+---
 ## Visualisation using foxglove
 
 Foxglove allows you to visualize topics broadcasted by the Pi, provided you are connected to the same network.
@@ -97,4 +98,29 @@ More info here: https://github.com/foxglove/ros-foxglove-bridge
 
 ### Example of foxglove with rviz.launch (to visualize alex model)
 ![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/7bbd2431-71d5-4141-84cc-da8585d3f1eb)
+
+---
+## Real-time Map Visualisation
+### Process is automated in tmux script on alex, simply run
+
+    ./start_tmux.sh
+
+### However, if you have no tmux, perform the following:
+1. Run master node
+
+        roscore
+
+2. Open two terminals, one for lidar and one for slam.
+
+3. On "lidar" terminal run
+
+        roslaunch alex lidar.launch
+    
+4. On "slam" terminal run 
+
+        roslaunch alex slam.launch
+
+5. Open Foxglove Desktop Application and connect to ROS_MASTER_URI.
+
+![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/ca35e862-b39e-4007-b5e6-ec6b9b84491c)
 
