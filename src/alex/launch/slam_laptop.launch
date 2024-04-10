@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <param name="robot_description" textfile="/home/shengbin2004/alex_ws/src/alex/urdf/alex.urdf" />
+  
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+  
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 3.14159 0 0 base_link laser 100"/>
+  
+  <include file="$(find hector_mapping)/launch/mapping_default.launch">
+    <arg name="base_frame" value="base_link"/>
+    <arg name="odom_frame" value="base_link"/>
+    <arg name="scan_topic" value="scan"/>
+    <arg name="pub_map_odom_transform" value="true"/>
+  </include>
+
+  <include file="$(find hector_geotiff_launch)/launch/geotiff_mapper.launch">
+    <arg name="trajectory_source_frame_name" value="scanmatcher_frame"/>
+    <arg name="map_file_path" value="/home/shengbin2004/alex_ws/src/alex/maps"/>
+  </include>
+
+  
+</launch>
