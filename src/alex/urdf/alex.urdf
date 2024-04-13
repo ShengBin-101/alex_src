@@ -36,6 +36,30 @@
         </visual>
     </link>
 
+    <!-- Create a 45mm cube to be at the front called color_sensor_link-->
+    <link name="color_sensor_link">
+        <visual>
+            <geometry>
+                <box size="0.045 0.045 0.045"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.5 0.5 0.5 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <!-- Create a 70mm long extension for the back of the robot, color it dark blue-->
+    <link name="rear_link">
+        <visual>
+            <geometry>
+                <box size="0.06 0.100 0.020"/>
+            </geometry>
+            <material name="dark_blue">
+                <color rgba="0.1 0.1 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
     
     <!-- Define the wheel link -->
     <link name="front_left_wheel_link">
@@ -121,6 +145,20 @@
         <parent link="base_link"/>
         <child link="front_link"/>
         <origin xyz="0.132 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Define joint for color sensor -->
+    <joint name="color_sensor_joint" type="fixed">
+        <parent link="front_link"/>
+        <child link="color_sensor_link"/>
+        <origin xyz="0.015 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- Define joint for rear link -->
+    <joint name="rear_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="rear_link"/>
+        <origin xyz="-0.155 0 0" rpy="0 0 0"/>
     </joint>
 
     <!-- Define joint for lidar column -->
