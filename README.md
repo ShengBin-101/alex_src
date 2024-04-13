@@ -1,6 +1,7 @@
 # alex_ws
 
 This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
+
 Main functionalities include real-time map visualisation and map saving.
 
 ### Alex
@@ -34,12 +35,15 @@ catkin_make
 ```
 source devel/setup.bash
 ```
-5) Run slam.launch file to run lidar node and hector_slam node
+5) Run roscore or Start ROS master
 ```
-roslaunch alex slam.launch
+roscore
 ```
-
-6) RECOMMENDED: Instead of running slam.launch on the pi, run slam_laptop.launch on local device/laptop instead!
+6) Run lidar.launch from alex package to start lidar node
+```
+roslaunch alex lidar.launch
+```
+7) Run slam_laptop.launch file **on laptop** to run hector_slam node
 
 This allows you to offload SLAM computation from the pi.
 ```
@@ -120,30 +124,7 @@ More info here: https://github.com/foxglove/ros-foxglove-bridge
 https://github.com/ShengBin-101/alex_ws/assets/52733750/96dabaaf-2b83-4652-9c23-fc2892bac013
 
 ---
-## Real-time Map Visualisation
-### Process is automated in tmux script on alex, simply run
-
-    ./start_tmux.sh
-
-### However, if you have no tmux, perform the following:
-1. Run master node
-
-        roscore
-
-2. Open two terminals, one for lidar and one for slam.
-
-3. On "lidar" terminal run
-
-        roslaunch alex lidar.launch
-    
-4. On "slam" terminal run 
-
-        roslaunch alex slam.launch
-
-5. Open Foxglove Desktop Application and connect to ROS_MASTER_URI.
-
----
-Some Results
+## Real-time Map Visualisation Results
 
 Scan of my room             |  Map of a random Seminar Room in my hostel :)
 :-------------------------:|:-------------------------:
