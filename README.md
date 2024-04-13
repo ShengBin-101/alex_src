@@ -121,7 +121,7 @@ TLS can be enabled, just need add path to certificates.
 More info here: https://github.com/foxglove/ros-foxglove-bridge
 
 ### Example of foxglove with rviz.launch (to visualize alex model)
-https://github.com/ShengBin-101/alex_ws/assets/52733750/96dabaaf-2b83-4652-9c23-fc2892bac013
+<img src="resources/alex_foxglove_urdf_gif.gif" alt="urdf_foxglove" width="750"/>
 
 ---
 ## Real-time Map Visualisation Results
