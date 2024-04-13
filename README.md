@@ -1,6 +1,15 @@
 # alex_ws
 
 This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
+Main functionalities include real-time map visualisation and map saving.
+
+### URDF of Alex
+![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/fd6f603c-8100-4928-a7c4-a6559323e328)
+
+
+### Visualisation
+![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/763e0d64-7692-4e8b-bb72-452f9ac1c197)
+
 
 ## How to use this repo.
 
@@ -122,5 +131,10 @@ More info here: https://github.com/foxglove/ros-foxglove-bridge
 
 5. Open Foxglove Desktop Application and connect to ROS_MASTER_URI.
 
+This is a scan of my dorm room
 ![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/ca35e862-b39e-4007-b5e6-ec6b9b84491c)
+
+This is a map of one of the random Seminar Rooms in my hostel
+![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/e9ee841f-6cdf-4468-bd83-cdc7a047e951)
+
 
