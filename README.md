@@ -3,13 +3,17 @@
 This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
 Main functionalities include real-time map visualisation and map saving.
 
-### URDF of Alex
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/fd6f603c-8100-4928-a7c4-a6559323e328)
+### Alex
+
+Physical             |  URDF
+:-------------------------:|:-------------------------:
+<img src="resources/alex.jpeg" alt="alex" width="400"/>  |  <img src="resources/alex_urdf.png" alt="urdf" width="400"/>
 
 
 ### Visualisation
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/763e0d64-7692-4e8b-bb72-452f9ac1c197)
-
+<p align="left">
+<img src="resources/alex_mapping.png" alt="mapping" width="800"/> 
+</p>
 
 ## How to use this repo.
 
@@ -100,13 +104,13 @@ Open up foxglove application on your laptop (make sure you are in same network a
 > Click on "open connection"
 > Under "Foxglove Websocket", enter ws://ip-address-of-pi:8765 for Websocket URL
 
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/59acae9c-4a21-435f-97e3-09539afc36ad)
+![foxglove-config](https://github.com/ShengBin-101/alex_ws/blob/main/resources/alex_foxglove_config.png)
 
 TLS can be enabled, just need add path to certificates.
 More info here: https://github.com/foxglove/ros-foxglove-bridge
 
 ### Example of foxglove with rviz.launch (to visualize alex model)
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/7bbd2431-71d5-4141-84cc-da8585d3f1eb)
+https://github.com/ShengBin-101/alex_ws/assets/52733750/96dabaaf-2b83-4652-9c23-fc2892bac013
 
 ---
 ## Real-time Map Visualisation
@@ -131,10 +135,11 @@ More info here: https://github.com/foxglove/ros-foxglove-bridge
 
 5. Open Foxglove Desktop Application and connect to ROS_MASTER_URI.
 
-This is a scan of my dorm room
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/ca35e862-b39e-4007-b5e6-ec6b9b84491c)
+---
+Some Results
 
-This is a map of one of the random Seminar Rooms in my hostel
-![image](https://github.com/ShengBin-101/alex_ws/assets/52733750/e9ee841f-6cdf-4468-bd83-cdc7a047e951)
+Scan of my room             |  Map of a random Seminar Room in my hostel :)
+:-------------------------:|:-------------------------:
+<img src="resources/alex_foxglove_mapping_room.jpeg" alt="room" width="400"/>  |  <img src="resources/rc4_room_map.png" alt="rc4_room" width="400"/>
 
 
