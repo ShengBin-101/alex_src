@@ -38,6 +38,13 @@ source devel/setup.bash
 ```
 roslaunch alex slam.launch
 ```
+
+6) RECOMMENDED: Instead of running slam.launch on the pi, run slam_laptop.launch on local device/laptop instead!
+
+This allows you to offload SLAM computation from the pi.
+```
+roslaunch alex slam_laptop.launch
+```
 ---
 
 ## Lidar Setup
