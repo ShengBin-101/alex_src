@@ -133,3 +133,5 @@ Scan of my room             |  Map of a random Seminar Room in my hostel :)
 <img src="resources/alex_foxglove_mapping_room.jpeg" alt="room" width="400"/>  |  <img src="resources/rc4_room_map.png" alt="rc4_room" width="400"/>
 
 
+## [EXTRA] We made Alex move in a Virtual Environment :)
+<img src="resources/gazebo_alex.gif" alt="gazebo_alex" width="750"/>
