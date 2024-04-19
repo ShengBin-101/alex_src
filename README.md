@@ -135,3 +135,6 @@ Scan of my room             |  Map of a random Seminar Room in my hostel :)
 
 ## [EXTRA] We made Alex move in a Virtual Environment :)
 <img src="resources/gazebo_alex.gif" alt="gazebo_alex" width="750"/>
+```
+    roslaunch alex diff_drive.launch
+```
