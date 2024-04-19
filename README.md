@@ -1,8 +1,10 @@
 # alex_ws
 
-This repo is the ROS1 Noetic Workspace for Alex (CG2111A).
+This repo contains a custom ROS1 Noetic Workspace for Alex (CG2111A).
 
-Main functionalities include real-time map visualisation and map saving.
+Main functionalities include launching of rplidar-a1 node and hector-slam.
+Real-time map visualisation can be done using either RVIZ or Foxglove Studio (covered in this readme).
+Map saving can be done using ROS Map Server.
 
 ### Alex
 
