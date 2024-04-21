@@ -6,6 +6,8 @@ Main functionalities include launching of rplidar-a1 node and hector-slam.
 Real-time map visualisation can be done using either RVIZ or Foxglove Studio (covered in this readme).
 Map saving can be done using ROS Map Server.
 
+[Setup & Teleoperation Demo](https://www.youtube.com/watch?v=yZxzk0InYiY)
+
 ### Alex
 
 Physical             |  URDF
