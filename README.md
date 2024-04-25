@@ -2,6 +2,8 @@
 
 This repo contains a custom ROS1 Noetic Workspace for Alex (CG2111A).
 
+Look at this [repo](https://github.com/ShengBin-101/CG2111A-Final-Project) for TLS + Arduino Code.
+
 Main functionalities include launching of rplidar-a1 node and hector-slam.
 Real-time map visualisation can be done using either RVIZ or Foxglove Studio (covered in this readme).
 Map saving can be done using ROS Map Server.
